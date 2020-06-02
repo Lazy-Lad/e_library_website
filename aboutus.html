@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="icon" href="images/about.png" type="image/icon type">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+
+body
+{
+  /* background-color: whitesmoke; */
+  /* background-image: linear-gradient( to top right, whitesmoke,rgb(207, 224, 243)); */
+  background-image: url('images/background_dark_1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.heading{
+  text-align: left; 
+  margin-left: 15px;  
+  font-size: 50px;
+  margin-top: 30px;
+  color: white;
+  font-weight: 600;
+}
+.info_block>p{
+  border-left: 3px solid red;
+  padding-left: 10px;
+}
+.info_block{
+  color: white;
+  font-weight: 600;
+  
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  .card{
+    height: fit-content;
+  }
+  .container{
+    text-align: center;
+    overflow: hidden;
+  }
+  .info_block{
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    
+  }
+  .info_block>p{
+    
+    padding: 5px;
+  }
+  .heading
+  {
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+}
+@media screen and (min-width: 650px) {
+  .info_block{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    font-size: 24px;
+  }
+  div.container{
+    overflow: scroll;
+    height: 250px;
+  }
+  
+}
+@media screen and (max-width: 1200px) {
+  div.container{
+    overflow: scroll;
+    height: 250px;
+  }
+  
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(32, 32, 32), 0 6px 20px 0 rgb(32, 32, 32);
+}
+
+.container {
+  padding: 0 16px;
+  
+}
+
+.container::-webkit-scrollbar 
+{ 
+  width: 0 !important 
+}
+.row{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home </a>
+            <a class="nav-item nav-link active" href="aboutus.html">About Us</a>
+            <a class="nav-item nav-link" href="elibrary.php">E Library</a>
+          <!--
+            <a class="nav-item nav-link" href="#">Contact Us</a>
+          -->
+            <a class="nav-item nav-link" href="login.php">Login</a>
+           
+          </div>
+        </div>
+      </nav>
+
+<!--
+      <h2 style="text-align: left; margin-left: 15px; text-decoration: underline; font-size: 50px;">Coding Club</h2>
+      <p style="text-align: justify; margin-left: 10px; margin-right: 10px; font-size: 20px;">This website is for our college's coding club. This is also our project and following this learning curve, we will achieve great benefit. In this website, you will also be able to access many codes for different types of coding problems and asks questions from our tutor.it will provides many resources In the field of computer science and IT. It is very helpful for developing interest in many emerging technologies. Events will be organized on a regular basis many tips will be provided here.</p>
+      <br><br>
+-->
+
+<!-- <h2 class="heading" >E-Library</h2>
+<div class="info_block">
+<p style="text-align: justify; margin-left: 10px; margin-right: 10px; font-size: 20px;">Digital libraries are systems providing user with coherent access to a very large, organized repository of information and knowledge Digital library is a global virtual library. The library of thousands of networked electronic libraries from the down of civilization, the intellectual brains have poured their omniscience in different directions in shape of print and non-print form to enlightened mass to explore multifarious research and development. Several terms have been coined at different times to represent the concept of library without books.</p>
+<p style="text-align: justify; margin-left: 10px; margin-right: 10px; font-size: 20px;">Digital libraries are logical extension and augmentations of physical library. They extend and augment their physical counterparts by extending existing resources and services and enable development of new possibilities for information access and Retrieval in other worlds Electronic library based on digitalized data is text replacing the paper based records and that is why with the help of networking one can have access to resources round the clock.</p>
+<br><br>
+</div> -->
+
+
+<h2 class="heading">Develo<span style="color: red;">p</span>er team</h2>
+<div class="info_block">
+<p>We are a group of friends. we love to make stuff, this website is small contribution and fun project for our college's 
+  Electronic library. we wish to grow this website as a large helpful database for our fellow student. 
+</p>
+<h3>Enjoy our Website.</h3>
+<br><br>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div style="text-align: center; padding-bottom:30px ;">
+        <img src="images/sameer.jpg" alt="Sameer" style="width:78%; height:100%;">
+      </div>
+      <div class="container">
+        <h2>Sameer Kumar</h2>
+        <p class="title">Head Developer (Backend) and Technical</p>
+        <p>CSE 2K18</p>
+        <p><img src="images/gmail.png" alt="Email" width="25px" style="margin-right: 10px;"><a href="mailto:sk15055785@gmail.com">sk15055785@gmail.com</a> </p>
+        <p >Mob. No.: 9934298121</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div style="text-align: center; padding-bottom:30px ;">
+        <img  src="images/tathagat_1.jpg" alt="Tathagat" style="width:100%; ">
+      </div>
+      <div class="container">
+        <h2>Tathagat</h2>
+        <p class="title">UI & UX Designer, Developer (Frontend)</p>
+        <p>CSE 2K18</p>
+        <p class="icon"> <img src="images/gmail.png" alt="Email" width="25px" style="margin-right: 10px;"> <a href="mailto:tathagatkumar905@gmail.com">tathagatkumar905@gmail.com</a></p>
+        <p class="icon"><img src="images/Linkedin_3.png" alt="Linkedin"width="25px" style="margin-right: 10px;"><a href="https://www.linkedin.com/in/tathagat-0686131a4/">linkedin.com/in/tathagat-0686131a4</a></p>
+       
+      </div>
+    </div>
+  </div>
+  <!-- satyam -->
+  <div class="column">
+    <div class="card">
+      <div style="text-align: center; padding-bottom:30px ;">
+        <img src="images/satyam.jpg" alt="Satyam" style="width:100%">
+      </div>
+      <div class="container">
+        <h2>Satyam Kumar Das</h2>
+        <p class="title">Designer</p>
+        <p>CSE 2K18</p>
+        <p><img src="images/gmail.png" alt="Email" width="25px" style="margin-right: 10px;"><a href=" mailto:dsatyam034@gmail.com"> dsatyam034@gmail.com</a></p>
+       <p>Mob. No.: 8271136294</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div style="text-align: center; padding-bottom:30px;">
+        <img src="images/aarush.jpeg" alt="Aarush" style="width:100%; ">
+      </div>
+      <div class="container">
+        <h2>Aarush Kumar</h2>
+        <p class="title">Designer</p>
+        <p>CSE 2K18</p>
+        <p><img src="images/gmail.png" alt="Email" width="25px" style="margin-right: 10px;">  <a href="mailto:aarushkumar368@gmail.com">aarushkumar368@gmail.com</a></p>
+       <p>Mob. No.: 9304762889</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="column">
+      <div class="card">
+        <div style="text-align: center; padding-bottom:30px ;">
+          <img src="images/satish.jpeg" alt="Satish" style="width:100%; height: 100%;">
+        </div>
+        <div class="container">
+          <h2>Satish Kumar</h2>
+          <p class="title">Content Writing</p>
+          <p>CSE 2K18</p>
+          <p><img src="images/gmail.png" alt="Email" width="25px" style="margin-right: 10px;"> <a href="mailto:satishkr20k9@gmail.com">satishkr20k9@gmail.com</a></p>
+         <p>Mob. No.: 6201120292</p>
+        </div>
+      </div>
+    </div>
+  
+    
+  <div class="column">
+    <div class="card">
+      <div style="text-align: center; padding-bottom: 30px;">
+        <img src="images/sakshi.jpg" alt="Sakshi" style="width:100%;">
+      </div>
+      <div class="container">
+        <h2>Sakshi Ghosh</h2>
+        <p class="title">Content Writing</p>
+        <p>CSE 2K18</p>
+        <p style="padding-bottom: 35px;"><img src="images/gmail.png" alt="Email" width="25px" style="margin-right: 10px;"> <a href="mailto:sakshighosh2000@gmail.com">sakshighosh2000@gmail.com</a></p>
+       <p></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+  
+  
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

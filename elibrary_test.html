@@ -1,0 +1,154 @@
+<!-- <?php
+// session_start();
+
+// if(!isset($_SESSION['username']))
+// {
+//   ?>
+//   <script>
+//     alert("You are logged out");
+//   </script>
+//   <?php
+//   header('location:login.php');
+// }
+
+?> -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>E Library</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="icon" href="images/digital.png" type="image/icon type">
+        <style type="text/css">
+        
+        .menu-bar
+            {
+                font-family: 'Cairo', sans-serif;
+                font-weight: bold;
+                text-decoration: rgb(247, 101, 34) underline;
+                text-transform: uppercase;
+                font-size: 25px;
+                margin-left: 10px;
+                padding: 0;
+                padding-left: 10px;
+                margin-bottom: 0;
+            }
+
+
+            .menu-bar a
+            {
+              color: white;
+            }
+
+            .menu-bar a:hover
+            {
+              color: green;
+              background: burlywood;
+            }
+
+            .menu-bar a:active
+            {
+              color: blue;
+            }
+        
+            #title
+            {
+              color: rgb(255, 255, 255);
+              font-family: monaco;
+              font-size: 56px;
+              margin-left: 20px;
+              text-decoration: underline;
+              width: 300px;
+              height: 90px;
+              float: left;
+              background-color: none;
+            }
+            @media screen and(max-width: 480px) {
+                div.content{
+                    padding: 20px;
+                }
+            }
+            .content
+            {
+              font-family: Verdana;
+              padding: 5px;
+              margin-top: 15px;
+              margin-left: 5px;
+              color: white;
+            }
+            body
+            {
+                margin: 0;
+                padding: 0;
+                background-image: url('images/background_dark_1.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            .header
+            {
+              width: 100%;
+              height: 90px;
+              background-color: none;
+            }
+
+            .username-show
+            {
+              color: rgb(255, 255, 255);
+              font-family: monaco;
+              text-align: center;
+              font-size: 25px;
+              margin-left: 20px;
+              text-decoration: none;
+              width: 200px;
+              padding-top: 25px;
+              height: 90px;
+              float: right;
+              background-color: none;
+              
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark p-4">
+                <div class="menu-bar"><a href="elibrary.php">Home</a></div>
+                <div class="menu-bar"><a href="cse.php">Computer Science And Engineering</a></div>
+                <div class="menu-bar"><a href="civil.php">Civil Engineering</a></div>
+                <div class="menu-bar"><a href="mech.php">Mechanical Engineering</a></div>
+                <div class="menu-bar"><a href="elect.php">Electronics</a></div>
+                <div class="menu-bar"><a href="help.html">Help Center</a></div>
+                <div class="menu-bar"><a href="logout.php">Logout</a></div>
+              </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+          </div>
+
+          <div class="header">
+            <div id="title">
+                E-Library
+            </div>
+            <div class="username-show">
+                <p>Welcome <?php echo $_SESSION['username'];  ?></p>
+            </div>
+          </div>
+          <div class="content">
+            <p>Digital libraries are systems providing user with coherent access to a very large, organized repository of information and knowledge Digital library is a global virtual library. The library of thousands of networked electronic libraries from the down of civilization, the intellectual brains have poured their omniscience in different directions in shape of print and non-print form to enlightened mass to explore multifarious research and development. Several terms have been coined at different times to represent the concept of library without books. </p>
+            <p>Digital libraries are logical extension and augmentations of physical library. They extend and augment their physical counterparts by extending existing resources and services and enable development of new possibilities for information access and Retrieval in other worlds Electronic library based on digitalized data is text replacing the paper based records and that is why with the help of networking one can have access to resources round the clock.</p>
+          </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

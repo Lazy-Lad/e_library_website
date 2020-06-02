@@ -1,0 +1,39 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+@media screen and (max-width:480px){
+    table,th,td
+    {
+        border-bottom: 2px black solid;
+        text-align: center;
+        width: 80vw;
+        padding:5px;
+        height: fit-content;
+        margin: 5px;
+    }
+} 
+@media screen and (min-width:820px){
+    #alert_mobile{
+        display: none;
+    }
+} 
+#file
+{
+    background-color:#D0D3D4;
+    margin:5px;
+    text-align:center;
+    font-size:40px;
+    font-weight:bold;
+}
+
+table,th,td
+{
+    border-bottom: 2px black solid;
+    text-align: center;
+    width: 80vw;
+    padding:5px;
+    height: fit-content;
+    margin: 5px;
+}

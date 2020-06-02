@@ -1,0 +1,159 @@
+body{
+    background-image: url(images/background_dark_1.jpg);
+    font-family: 'Montserrat', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+#card_4_upload{
+    background-color: #D0D3D4;
+    width: 80vw;
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    top: 50;
+    left: 0;
+    bottom: 50;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgb(32, 32, 32), 0 6px 20px 0 rgb(32, 32, 32);
+    margin-bottom:30px;
+    
+}
+.progress{
+    
+    margin-top: 15px;
+    width: 200px;
+}
+.custom-file{
+    margin-top: 10px;
+    width: 70vw;
+}
+@media screen and (max-width: 480px){
+    *{
+        font-family: 'Montserrat', sans-serif;
+    }
+    /* .progress,.custom-file{
+        width: 60vw;
+    } */
+    .container{
+        font-size: 18px;
+    }
+    .progress{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .btn_cnt{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    #float_property{
+        float: none;
+    }
+    .custom-file>p{
+        font-size: 16px;
+    }
+    #mrg_4_box{
+        margin-left: 0px;
+    }
+    .custom-file-label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        height: calc(1.5em + .75rem + 2px);
+        padding: .375rem .75rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        width: 230px;
+    }
+}
+@media screen and (max-width: 760px){
+    *{
+        font-family: 'Montserrat', sans-serif;
+    }
+    /* .progress,.custom-file{
+        width: 65vw;
+    } */
+    .container{
+        font-size: 18px;
+    }
+    .progress{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .btn_cnt{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    #float_property{
+        float: none;
+    }
+    .custom-file>p{
+        font-size: 16px;
+    }
+    #mrg_4_box{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 990px){
+    *{
+        font-family: 'Montserrat', sans-serif;
+    }
+    /* .progress,.custom-file{
+        width: 70vw;
+    } */
+    .container{
+        font-size: 18px;
+    }
+    .progress{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .btn_cnt{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    #float_property{
+        float: none;
+    }
+    .custom-file>p{
+        font-size: 16px;
+    }
+    #mrg_4_box{
+        margin-left: 0px;
+    }
+}
+.container> button{
+    margin-left:20px ;
+}
+.btn_cnt{
+    margin-top: 50px;
+    margin-left: 15px;
+}
+#mrg_4_box{
+    margin-left: 15px ;
+    width: 180px;
+    
+}
+#fill_area{
+    float: left;
+}
+#float_property {
+    float: left;
+    margin-right: 80px;
+    margin-bottom: 20px;
+}
+.bar{
+    margin-left: 15px;
+}

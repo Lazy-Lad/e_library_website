@@ -1,0 +1,146 @@
+<html>
+<head>
+    <title>Help Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="style/cse.css">
+    <style>
+      html,body{
+        margin: 0;
+        padding: 0;
+      }
+      .form_cont{
+        display: inline;
+        overflow: hidden;
+      }
+      @media screen and (max-width: 480px) {
+        #mobi_view{
+          font-size: 18px;
+        }
+        textarea{
+          width: 90vw;
+        }
+      }
+    </style>
+</head>
+<body>
+
+
+<div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <div class="menu-bar"><a href="elibrary.php">Home</a></div>
+            <div class="menu-bar"><a href="cse.php">Computer Science And Engineering</a></div>
+            <div class="menu-bar"><a href="#">Civil Engineering</a></div>
+            <div class="menu-bar"><a href="#">Mechanical Engineering</a></div>
+            <div class="menu-bar"><a href="#">Electronics</a></div>
+            <div class="menu-bar"><a href="help.html">Help & Feedback Center</a></div>
+            <div class="menu-bar"><a href="logout.php">Logout</a></div>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+
+<div class="branch-name">
+        <p>Feedback Form</p>
+</div>
+
+
+<div class="container mt-3 border-file-upload" >
+<p class="upload">Feedback Or Help Center</p>
+
+    <div id="mobi_view">
+      <form enctype="multipart/form-data">
+        <div class="form_cont">
+          <div>
+            <label for="name">Name :</label>
+          </div>
+          <div>
+            <input style="margin-top: 2px; margin-bottom: 2px;" type="text" name="name" id="name"><br>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label for="email">Email :</label>
+          </div>
+          <div>
+            <input style="margin-top: 2px; margin-bottom: 2px;" type="text" name="email" id="email">
+          </div>
+        </div>
+        <br>
+        <label for="message">Message :</label><br>
+        <textarea cols="145" rows="5" id="message"></textarea>    
+    </div>
+        
+    <div class="mt-3">
+      <button type="button" name="submit" class="btn btn-primary" onclick="insert()">Submit</button>
+    </div>
+    <div class="success">
+      <p id="success"></p>
+    </div>
+    </form>
+</div>
+
+<script>
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCddvleZKSa00HaIv9hc9W5bFvliUpf1wM",
+    authDomain: "help-3ee65.firebaseapp.com",
+    databaseURL: "https://help-3ee65.firebaseio.com",
+    projectId: "help-3ee65",
+    storageBucket: "help-3ee65.appspot.com",
+    messagingSenderId: "60400414066",
+    appId: "1:60400414066:web:9b88b6863adfce812c81eb",
+    measurementId: "G-5H2HHVJZFH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script>
+  function insert() {
+    var name=document.getElementById("name").value;
+    var email=document.getElementById("email").value;
+    var message=document.getElementById("message").value;
+
+    //pre built function to upload data to firebase
+    //path where your data will be stored
+    firebase.database().ref('user/'+name).set({
+       userName: name,
+        userEmail: email,
+        userMessage: message
+    });
+    
+    document.getElementById("success").innerHTML="Data is saved."
+}
+</script>
+
+</script>
+</body>
+</html>
